@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Secrets and local config: never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Terraform (state can contain secrets)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+
+# Local runtime output
+checkpoints/
+spark-warehouse/
+
+# Editor / OS
+.idea/
+.vscode/
+Thumbs.db
